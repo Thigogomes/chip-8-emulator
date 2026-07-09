@@ -4,11 +4,15 @@ A CHIP-8 emulator written in **C** using **SDL2** for graphics, audio, and keybo
 
 The project aims to provide a simple and readable implementation of the CHIP-8 virtual machine, making it suitable for learning emulator development and computer architecture concepts.
 
+![CHIP-8 Emulator running](src/assets/images/IBM_logo.png)
+
 ---
 
 # About CHIP-8
 
 CHIP-8 is an interpreted programming language created by Joseph Weisbecker in the mid-1970s for the COSMAC VIP and other 8-bit computers.
+
+![CHIP-8 Emulator running](src/assets/images/test_opcode.png)
 
 Instead of running native machine code, CHIP-8 programs (commonly called **ROMs**) execute on a virtual machine with:
 
@@ -107,16 +111,8 @@ gcc src/*.c -o src/output/chip8.exe -lmingw32 -lSDL2main -lSDL2
 
 # Running
 
-.\src\output\chip8.exe
-
 ```c
-char *rom = "src/roms/Brick.ch8";
-```
-
-Build the project and execute:
-
-```bash
-./chip8
+.\src\output\chip8.exe
 ```
 
 ---
@@ -222,6 +218,4 @@ The repository includes a few ROMs for testing:
 - Brick
 - Tetris
 - Test ROM
-
-These can be selected by changing the ROM path in `run.c`.
 
